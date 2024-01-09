@@ -20,5 +20,6 @@ st.write(st.session_state)
 view_button = st.button('View')
 
 if view_button or st.session_state.view_state:
+  st.session_state.view_state = True
   edited_data = st.data_editor(df)
   st.write(st.session_state)

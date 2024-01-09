@@ -10,12 +10,12 @@ data = {
 #load data into a DataFrame object:
 df = pd.DataFrame(data)
 
-st.write(st.session_state.keys)
-
 if 'view_state' not in st.session_state:
   st.session_state.view_state = False
 if 'edited_rows' not in st.session_state:
   st.session_state.edited_rows = None
+
+st.write(st.session_state)
 
 view_button = st.button('View')
 

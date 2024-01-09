@@ -10,6 +10,8 @@ data = {
 #load data into a DataFrame object:
 df = pd.DataFrame(data)
 
+st.write(st.session_state)
+
 if 'view_state' not in st.session_state:
   st.session_state.view_state = False
 

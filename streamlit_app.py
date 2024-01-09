@@ -1,4 +1,6 @@
 import streamlit as st
+import pandas as pd
+
 st.write('App')
 data = {
   "calories": [420, 380, 390],
